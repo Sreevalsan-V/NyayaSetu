@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/NyayaSetu/static/css/main.2d65f3b1.css",
-    "main.js": "/NyayaSetu/static/js/main.c609dfb0.js",
+    "main.css": "/NyayaSetu/static/css/main.db3f7c38.css",
+    "main.js": "/NyayaSetu/static/js/main.7e3100ff.js",
     "index.html": "/NyayaSetu/index.html",
-    "main.2d65f3b1.css.map": "/NyayaSetu/static/css/main.2d65f3b1.css.map",
-    "main.c609dfb0.js.map": "/NyayaSetu/static/js/main.c609dfb0.js.map"
+    "main.db3f7c38.css.map": "/NyayaSetu/static/css/main.db3f7c38.css.map",
+    "main.7e3100ff.js.map": "/NyayaSetu/static/js/main.7e3100ff.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d65f3b1.css",
-    "static/js/main.c609dfb0.js"
+    "static/css/main.db3f7c38.css",
+    "static/js/main.7e3100ff.js"
   ]
 }
