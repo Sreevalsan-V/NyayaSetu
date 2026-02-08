@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/NyayaSetu/static/css/main.2d65f3b1.css",
+    "main.js": "/NyayaSetu/static/js/main.acf9c767.js",
+    "index.html": "/NyayaSetu/index.html",
+    "main.2d65f3b1.css.map": "/NyayaSetu/static/css/main.2d65f3b1.css.map",
+    "main.acf9c767.js.map": "/NyayaSetu/static/js/main.acf9c767.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2d65f3b1.css",
+    "static/js/main.acf9c767.js"
+  ]
+}
