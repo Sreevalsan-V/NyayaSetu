@@ -38,9 +38,7 @@ function Login() {
   return (
     <div className="login-container">
       <div className="login-box">
-        <h1>LawTune</h1>
-        <p className="subtitle">Legal Platform MVP</p>
-        
+        <h1>LawTune</h1>        
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label>Username</label>
@@ -90,10 +88,6 @@ function Login() {
             Login
           </button>
         </form>
-
-        <p className="disclaimer">
-          * This is a demo MVP. No real authentication is implemented.
-        </p>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@
 export const MOCK_LAWYERS = [
   {
     id: 1,
-    name: 'Adv. Sarah Johnson',
+    name: 'Lawyer 1',
     specialization: 'Criminal & Corporate Law',
     experience: '18 years',
     location: 'Supreme Court of India',
@@ -16,7 +16,7 @@ export const MOCK_LAWYERS = [
   },
   {
     id: 2,
-    name: 'Adv. Priya Sharma',
+    name: 'Lawyer 2',
     specialization: 'Criminal Law',
     experience: '12 years',
     location: 'Delhi High Court',
@@ -30,7 +30,7 @@ export const MOCK_LAWYERS = [
   },
   {
     id: 3,
-    name: 'Adv. Rajesh Kumar',
+    name: 'Lawyer 3',
     specialization: 'Corporate Law',
     experience: '15 years',
     location: 'Supreme Court',
@@ -44,7 +44,7 @@ export const MOCK_LAWYERS = [
   },
   {
     id: 4,
-    name: 'Adv. Meera Reddy',
+    name: 'Lawyer 4',
     specialization: 'Family Law',
     experience: '8 years',
     location: 'Hyderabad District Court',
@@ -58,7 +58,7 @@ export const MOCK_LAWYERS = [
   },
   {
     id: 5,
-    name: 'Adv. Arjun Patel',
+    name: 'Lawyer 5',
     specialization: 'Property Law',
     experience: '10 years',
     location: 'Gujarat High Court',
@@ -72,7 +72,7 @@ export const MOCK_LAWYERS = [
   },
   {
     id: 6,
-    name: 'Adv. Kavita Singh',
+    name: 'Lawyer 6',
     specialization: 'Cyber Law',
     experience: '6 years',
     location: 'Bangalore City Court',

@@ -8,13 +8,13 @@ const MOCK_USERS = [
     username: 'client1',
     password: 'client123',
     role: 'CLIENT',
-    name: 'John Doe'
+    name: 'Client 1'
   },
   {
     username: 'lawyer1',
     password: 'lawyer123',
     role: 'ADVOCATE',
-    name: 'Adv. Sarah Johnson'
+    name: 'Lawyer 1'
   }
 ];
 

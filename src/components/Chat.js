@@ -6,13 +6,26 @@ import './Chat.css';
 function Chat() {
   const { user } = useAuth();
   const { getChatsForUser, messages, sendMessage } = useChatContext();
-  const [selectedChatId, setSelectedChatId] = useState(null);
+  
+  // Restore selected chat from localStorage
+  const [selectedChatId, setSelectedChatId] = useState(() => {
+    const saved = localStorage.getItem(`${user?.role}_selected_chat`);
+    return saved ? parseInt(saved) : null;
+  });
+  
   const [messageText, setMessageText] = useState('');
   const messagesEndRef = useRef(null);
 
   const userChats = getChatsForUser(user?.name || '', user?.role);
   const selectedChat = userChats.find(c => c.id === selectedChatId);
   const chatMessages = selectedChatId ? messages[selectedChatId] || [] : [];
+
+  // Save selected chat to localStorage
+  useEffect(() => {
+    if (selectedChatId && user?.role) {
+      localStorage.setItem(`${user.role}_selected_chat`, selectedChatId.toString());
+    }
+  }, [selectedChatId, user?.role]);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });

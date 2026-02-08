@@ -79,7 +79,7 @@ function CreateCaseForm({ onSubmit, onCancel, nextCaseNumber }) {
               type="text"
               value={formData.client}
               onChange={(e) => handleChange('client', e.target.value)}
-              placeholder="e.g., John Doe"
+              placeholder="e.g., Client 1"
               required
             />
           </div>

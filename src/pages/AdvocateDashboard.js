@@ -9,8 +9,15 @@ import { MOCK_CASES } from '../data/mockCases';
 import './AdvocateDashboard.css';
 
 function AdvocateDashboard() {
-  const [activeView, setActiveView] = useState('cases');
-  const [selectedCaseId, setSelectedCaseId] = useState(null);
+  // Restore view state from localStorage
+  const [activeView, setActiveView] = useState(() => {
+    return localStorage.getItem('advocate_active_view') || 'cases';
+  });
+  
+  const [selectedCaseId, setSelectedCaseId] = useState(() => {
+    const saved = localStorage.getItem('advocate_selected_case');
+    return saved ? parseInt(saved) : null;
+  });
   
   // Load cases from localStorage or use mock data
   const [cases, setCases] = useState(() => {
@@ -19,6 +26,17 @@ function AdvocateDashboard() {
   });
   
   const [showCreateCase, setShowCreateCase] = useState(false);
+
+  // Save view state to localStorage
+  useEffect(() => {
+    localStorage.setItem('advocate_active_view', activeView);
+  }, [activeView]);
+
+  useEffect(() => {
+    if (selectedCaseId) {
+      localStorage.setItem('advocate_selected_case', selectedCaseId.toString());
+    }
+  }, [selectedCaseId]);
 
   // Save cases to localStorage whenever they change
   useEffect(() => {
