@@ -39,10 +39,6 @@ function LawyerProfile({ lawyer }) {
         <div className="profile-title">
           <h2>{lawyer.name}</h2>
           <p className="profile-specialization">{lawyer.specialization}</p>
-          <div className="profile-rating">
-            <span className="stars">★ {lawyer.rating}</span>
-            <span className="cases-won">{lawyer.casesWon} cases won</span>
-          </div>
         </div>
       </div>
 

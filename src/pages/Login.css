@@ -16,7 +16,7 @@
 }
 
 .login-logo {
-  width: 120px;
+  width: 150px;
   height: 120px;
   display: block;
   margin: 0 auto 20px;
@@ -85,7 +85,7 @@
 .login-button {
   width: 100%;
   padding: 12px;
-  background-color: #4CAF50;
+  background-color: #D4AF37;
   color: white;
   border: none;
   border-radius: 4px;
@@ -96,7 +96,7 @@
 }
 
 .login-button:hover {
-  background-color: #45a049;
+  background-color: #B8961E;
 }
 
 .disclaimer {

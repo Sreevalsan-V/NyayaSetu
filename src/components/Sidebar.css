@@ -20,7 +20,7 @@
   height: 80px;
   display: block;
   margin: 0 auto 15px;
-  object-fit: contain;
+  object-fit: cover;
   background-color: white;
   border-radius: 8px;
   padding: 10px;

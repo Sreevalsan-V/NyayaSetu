@@ -38,8 +38,9 @@ function Login() {
   return (
     <div className="login-container">
       <div className="login-box">
-        <img src="/logo.png" alt="LawTune Logo" className="login-logo" />
-        <h1>LawTune</h1>        
+        <img src={process.env.PUBLIC_URL + "/logo.png"}
+            alt="LawTune Logo"
+            className="login-logo"/>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label>Username</label>
