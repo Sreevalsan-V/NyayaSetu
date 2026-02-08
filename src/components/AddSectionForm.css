@@ -1,0 +1,85 @@
+.add-section-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.add-section-form {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  width: 90%;
+  max-width: 450px;
+}
+
+.add-section-form h3 {
+  margin: 0 0 20px 0;
+  color: #2c3e50;
+}
+
+.add-section-form .form-group {
+  margin-bottom: 20px;
+}
+
+.add-section-form .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #2c3e50;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.add-section-form .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.add-section-form .form-group input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.add-section-form .form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.add-section-form .form-actions button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.add-section-form .cancel-btn {
+  background-color: #ecf0f1;
+  color: #2c3e50;
+}
+
+.add-section-form .cancel-btn:hover {
+  background-color: #bdc3c7;
+}
+
+.add-section-form .submit-btn {
+  background-color: #3498db;
+  color: white;
+}
+
+.add-section-form .submit-btn:hover {
+  background-color: #2980b9;
+}

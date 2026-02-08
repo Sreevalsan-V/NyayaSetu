@@ -1,0 +1,116 @@
+.case-list {
+  padding: 20px;
+}
+
+.case-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.case-list-header h2 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.create-case-btn {
+  padding: 10px 18px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+}
+
+.create-case-btn:hover {
+  background-color: #229954;
+}
+
+.case-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.case-card {
+  background: white;
+  border: 2px solid #ecf0f1;
+  border-radius: 8px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.case-card:hover {
+  border-color: #3498db;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.case-card.selected {
+  border-color: #3498db;
+  background-color: #ebf5fb;
+}
+
+.case-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.case-card-header h3 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  color: white;
+  font-weight: 500;
+}
+
+.case-title {
+  margin: 0 0 12px 0;
+  color: #34495e;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.case-meta {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.case-type {
+  font-weight: 600;
+}
+
+.case-court {
+  color: #7f8c8d;
+}
+
+.case-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.info-row {
+  color: #555;
+}
+
+.info-row strong {
+  color: #2c3e50;
+}

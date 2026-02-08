@@ -1,0 +1,87 @@
+// Mock lawyer data
+export const MOCK_LAWYERS = [
+  {
+    id: 1,
+    name: 'Adv. Sarah Johnson',
+    specialization: 'Criminal & Corporate Law',
+    experience: '18 years',
+    location: 'Supreme Court of India',
+    rating: 4.9,
+    casesWon: 256,
+    phone: '+91 98765 43215',
+    email: 'sarah.johnson@lawtune.com',
+    about: 'Highly experienced advocate with expertise in both criminal defense and corporate litigation. Known for strategic case planning and exceptional courtroom advocacy.',
+    education: 'LLB from National Law School, LLM from Harvard Law School',
+    languages: ['English', 'Hindi']
+  },
+  {
+    id: 2,
+    name: 'Adv. Priya Sharma',
+    specialization: 'Criminal Law',
+    experience: '12 years',
+    location: 'Delhi High Court',
+    rating: 4.8,
+    casesWon: 145,
+    phone: '+91 98765 43210',
+    email: 'priya.sharma@lawtune.com',
+    about: 'Specializing in criminal defense with extensive experience in high-profile cases. Known for thorough case preparation and aggressive courtroom presence.',
+    education: 'LLB from Delhi University, LLM from National Law School',
+    languages: ['Hindi', 'English', 'Punjabi']
+  },
+  {
+    id: 3,
+    name: 'Adv. Rajesh Kumar',
+    specialization: 'Corporate Law',
+    experience: '15 years',
+    location: 'Supreme Court',
+    rating: 4.9,
+    casesWon: 203,
+    phone: '+91 98765 43211',
+    email: 'rajesh.kumar@lawtune.com',
+    about: 'Expert in corporate litigation, mergers & acquisitions, and commercial disputes. Advises startups and established corporations.',
+    education: 'LLB from Mumbai University, MBA from IIM Bangalore',
+    languages: ['Hindi', 'English', 'Marathi']
+  },
+  {
+    id: 4,
+    name: 'Adv. Meera Reddy',
+    specialization: 'Family Law',
+    experience: '8 years',
+    location: 'Hyderabad District Court',
+    rating: 4.7,
+    casesWon: 98,
+    phone: '+91 98765 43212',
+    email: 'meera.reddy@lawtune.com',
+    about: 'Compassionate approach to family law matters including divorce, custody, and property disputes. Focus on amicable settlements.',
+    education: 'LLB from NALSAR University',
+    languages: ['Telugu', 'English', 'Hindi']
+  },
+  {
+    id: 5,
+    name: 'Adv. Arjun Patel',
+    specialization: 'Property Law',
+    experience: '10 years',
+    location: 'Gujarat High Court',
+    rating: 4.6,
+    casesWon: 127,
+    phone: '+91 98765 43213',
+    email: 'arjun.patel@lawtune.com',
+    about: 'Specializes in property disputes, land acquisition, and real estate transactions. Strong track record in property litigation.',
+    education: 'LLB from Gujarat National Law University',
+    languages: ['Gujarati', 'Hindi', 'English']
+  },
+  {
+    id: 6,
+    name: 'Adv. Kavita Singh',
+    specialization: 'Cyber Law',
+    experience: '6 years',
+    location: 'Bangalore City Court',
+    rating: 4.5,
+    casesWon: 76,
+    phone: '+91 98765 43214',
+    email: 'kavita.singh@lawtune.com',
+    about: 'Pioneering advocate in cyber law and digital crimes. Handles cases related to data breaches, online fraud, and digital rights.',
+    education: 'LLB from National Law School, Certificate in Cyber Security',
+    languages: ['English', 'Hindi', 'Kannada']
+  }
+];
