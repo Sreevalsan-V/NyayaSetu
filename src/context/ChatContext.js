@@ -124,6 +124,16 @@ export function ChatProvider({ children }) {
     }
   };
 
+  // Delete a chat
+  const deleteChat = (chatId) => {
+    setActiveChats(prev => prev.filter(chat => chat.id !== chatId));
+    setMessages(prev => {
+      const newMessages = { ...prev };
+      delete newMessages[chatId];
+      return newMessages;
+    });
+  };
+
   const value = {
     contactRequests,
     activeChats,
@@ -133,7 +143,8 @@ export function ChatProvider({ children }) {
     rejectContactRequest,
     sendMessage,
     getPendingRequestsForLawyer,
-    getChatsForUser
+    getChatsForUser,
+    deleteChat
   };
 
   return (

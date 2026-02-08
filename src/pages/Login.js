@@ -38,6 +38,7 @@ function Login() {
   return (
     <div className="login-container">
       <div className="login-box">
+        <img src="/logo.png" alt="LawTune Logo" className="login-logo" />
         <h1>LawTune</h1>        
         <form onSubmit={handleSubmit}>
           <div className="form-group">

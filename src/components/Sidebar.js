@@ -15,6 +15,7 @@ function Sidebar({ activeView, onViewChange }) {
   return (
     <div className="sidebar">
       <div className="sidebar-header">
+        <img src="/logo.png" alt="LawTune Logo" className="sidebar-logo" />
         <h2>LawTune</h2>
         <p className="user-name">{user?.name}</p>
         <p className="user-role">{user?.role}</p>

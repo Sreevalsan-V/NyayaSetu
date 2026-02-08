@@ -5,7 +5,7 @@ import './Chat.css';
 
 function Chat() {
   const { user } = useAuth();
-  const { getChatsForUser, messages, sendMessage } = useChatContext();
+  const { getChatsForUser, messages, sendMessage, deleteChat } = useChatContext();
   
   // Restore selected chat from localStorage
   const [selectedChatId, setSelectedChatId] = useState(() => {
@@ -41,6 +41,13 @@ function Chat() {
 
     sendMessage(selectedChatId, user.role, user.name, messageText);
     setMessageText('');
+  };
+
+  const handleDeleteChat = () => {
+    if (window.confirm('Are you sure you want to delete this entire chat? This cannot be undone.')) {
+      deleteChat(selectedChatId);
+      setSelectedChatId(null);
+    }
   };
 
   const getOtherPersonName = (chat) => {
@@ -84,10 +91,15 @@ function Chat() {
         ) : (
           <>
             <div className="chat-window-header">
-              <div className="chat-header-avatar">
-                {getOtherPersonName(selectedChat)[0]}
+              <div className="chat-header-info">
+                <div className="chat-header-avatar">
+                  {getOtherPersonName(selectedChat)[0]}
+                </div>
+                <h3>{getOtherPersonName(selectedChat)}</h3>
               </div>
-              <h3>{getOtherPersonName(selectedChat)}</h3>
+              <button className="delete-chat-btn" onClick={handleDeleteChat}>
+                Delete Chat
+              </button>
             </div>
 
             <div className="chat-messages">
